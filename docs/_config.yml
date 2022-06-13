@@ -41,7 +41,19 @@ plugins:
 
 gems:
   - jekyll-sitemap
+  
+url: "http://example.com/"
 
+sitemap:
+    file: "/sitemap.xml"
+    exclude:
+        - "/atom.xml"
+        - "/feed.xml"
+        - "/feed/index.xml"
+    include_posts:
+        - "/index.html"
+    change_frequency_name: "monthly"
+    priority_name: "0.5"
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
